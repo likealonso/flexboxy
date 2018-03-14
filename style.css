@@ -1,0 +1,33 @@
+#container {
+    display: flex;
+    border: 2px solid black;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    height: 500px;
+    /* align-items: center; */
+    align-content: stretch
+}
+
+.item {
+    width: 150px;
+    height: 100px;
+}
+
+.item:nth-child(1) {
+    background-color: red;
+    order: 3;
+    flex: 1
+}
+
+.item:nth-child(2) {
+    background-color: yellow;
+    order: 2;
+    
+    /* align-self: flex-end */
+}
+
+.item:nth-child(3) {
+    background-color: blue;
+    
+}
